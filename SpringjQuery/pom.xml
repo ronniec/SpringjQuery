@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>SpringjQuery</groupId>
   <artifactId>SpringjQuery</artifactId>
   <packaging>war</packaging>
-  <version>0.0.1-SNAPSHOT</version>
-  <description></description>
+  <version>0.0.1</version>
+  <description />
   <dependencies>
     <dependency>
       <groupId>javax.servlet</groupId>
@@ -74,4 +74,20 @@
     <org.springframework.version>4.0.3.RELEASE</org.springframework.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+  
+  <scm>
+	<connection>scm:git:git@github.com:ronniec/SpringjQuery.git</connection>
+	<url>scm:git:git@github.com:ronniec/SpringjQuery.git</url>
+	<developerConnection>scm:git:git@github.com:ronniec/SpringjQuery.git</developerConnection>
+  </scm>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.0-beta-9</version>
+      </plugin>
+    </plugins>
+  </build>
 </project>
